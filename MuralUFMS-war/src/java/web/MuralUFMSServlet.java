@@ -23,13 +23,10 @@ import model.LoginFacade;
 @WebServlet(name = "MuralUFMSServlet", urlPatterns = {"/MuralUFMS, /Index, /Home"})
 public class MuralUFMSServlet extends HttpServlet {
 
-    /*
-    @EJB
-    private LoginFacade loginFacade;
-
     @EJB
     private MuralUFMSSessionBean muralUFMSSessionBean;
-*/
+
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -65,8 +62,7 @@ public class MuralUFMSServlet extends HttpServlet {
         }
         */
         
-        /* request.setAttribute("usercount", muralUFMSSessionBean.getActiveSessionsCount());
-        */
+         request.setAttribute("usercount", muralUFMSSessionBean.getActiveSessionsCount());
        
         request.getSession(true);
         request.getRequestDispatcher(paginaResultado).forward(request, response);

@@ -9,12 +9,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Mural UFMS yyyy</title>
+        <title>Mural UFMS</title>
     </head>
     <body>
         <h1>Mural UFMS!</h1>
         
-        
+        <p>Status do servidor </p>
         <c:if test="${not empty usercount}">
                 
                 <p>Usuários conectados: ${usercount}</p>

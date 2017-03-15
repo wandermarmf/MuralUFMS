@@ -7,7 +7,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>MuralUFMSServlet</servlet-name>
-        <url-pattern>/Inicio</url-pattern>
         <url-pattern>/MuralUFMS</url-pattern>
     </servlet-mapping>
     <session-config>
